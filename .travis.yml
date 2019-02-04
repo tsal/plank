@@ -5,8 +5,10 @@ go:
 env:
   - GO111MODULE=on
   - GO111MODULE=auto
+
+before_install:
+  - go get github.com/mattn/goveralls
 # move to `go mod` should cover this
-#before_install:
 #  - go get -u github.com/golang/dep/cmd/dep
 #  - dep ensure
 #  - go get github.com/mattn/goveralls
