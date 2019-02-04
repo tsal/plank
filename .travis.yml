@@ -13,6 +13,6 @@ env:
 script:
   # coveralls is giving an error saying it can't find the project.
   # it probably has something to do with Armory vs armory
-  # - $GOPATH/bin/goveralls -service=travis-ci
+  - $GOPATH/bin/goveralls -service=travis-ci
   - go test -v ./...
 
